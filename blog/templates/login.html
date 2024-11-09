@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+{% block content %}
+<body>
+<div class=" container-fluid">
+    <div class="welcome-heading welcome-position">
+        <h3>Welcome to </h3>&nbsp;&nbsp;&nbsp;<bold>Tech Diaries....</bold></h1>
+    </div>
+    <form action=""></form>
+    <div class="position">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button class="btn btn-primary mt-2" type="submit">Login</button>
+        <a href="{% url 'register' %}" class="btn btn-warning mt-2">Signup</a>
+     
+    </div>
+  </div>
+</body>
+{% endblock %}

@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../images/img.jpg");
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    background-size: cover; /* Ensures the image covers the whole viewport */
+    background-position: center;
+}
+
+.position{
+    width: 25rem;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    transform: translate(220%,70%);
+}
+
+.welcome-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: adds a shadow effect to make the text more readable on the background */
+    z-index: 10; /* Make sure text is on top of the background */
+}
+.welcome-position{
+    position: absolute;
+    bottom: 27rem;
+    left: 25rem;
+    font-family: serif;
+}
